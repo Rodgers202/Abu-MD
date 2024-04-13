@@ -10,9 +10,9 @@ module.exports = {
     API_KEY: process.env.HEROKU_API_KEY,
     APP_NAME: process.env.HEROKU_APP_NAME },
     BGM_URL : process.env.BGM_URL || "null",
-    REJECT_CALL : toBool(process.env.REJECT_CALL || 'false'),
-    BADWORD_BLOCK : toBool(process.env.BADWORD_BLOCK || 'false'),
-    ALLWAYS_ONLINE: toBool(process.env.ALLWAYS_ONLINE || "false"),
+    REJECT_CALL : toBool(process.env.REJECT_CALL || 'true'),
+    BADWORD_BLOCK : toBool(process.env.BADWORD_BLOCK || 'true'),
+    ALLWAYS_ONLINE: toBool(process.env.ALLWAYS_ONLINE || "true"),
     PM_BLOCK : toBool(process.env.PM_BLOCK || "false"),
     BGMBOT : toBool(process.env.BGMBOT || "false"),
     CALL_BLOCK : toBool(process.env.CALL_BLOCK || "false"),
@@ -26,7 +26,7 @@ module.exports = {
     AUTO_READ : process.env.AUTO_READ ||  "false",//true, command
     CHATBOT : process.env.CHATBOT || "false",//true, pm, group
     AUTO_REACT : process.env.AUTO_REACT || "false",//true, command, emoji
-    WARNCOUND : process.env.WARNCOUND || 5,
+    WARNCOUND : process.env.WARNCOUND || 1,
     BOT_INFO : process.env.BOT_INFO || "Abu MD;Jsl;https://i.imgur.com/o3WP9EK.jpeg",
     MODE : process.env.MODE || "private",
     PREFIX : process.env.PREFIX || "[.,!]",//both  .  and [.] equal, for multi prefix we use [] this
